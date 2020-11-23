@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel='stylesheet' href="/style/style.css" />
+    <title>POD</title>
+</head>
+<body>
+    <div class="container">
+        <img src="/assets/desktop/logo.svg" alt="logo-pod">
+        <div class="main-description">
+            <h1 class="title"><span class="light-green title">PUBLISH YOUR PODCASTS </span>EVERYWHERE.</h1>
+            <p class="grey">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+            <div class="email-input">
+                <input id="input" type="email" value="" placeholder="Email adress">
+                <a onclick="checkEmail(document.getElementById('input').value)" class="button dark">Request Access</a>
+                <p id="error" class="error"></p>
+            </div>
+            <div class="brands">
+                <span class="spotify brand"></span>
+                <span class="apple brand"></span>
+                <span class="google brand"></span>
+                <span class="pocket brand"></span>
+            </div>
+        </div>
+        <div class="main-image"></div>
+    </div>
+    <script src="/script/app.js"></script>
+</body>
+</html>

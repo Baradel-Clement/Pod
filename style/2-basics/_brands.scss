@@ -1,0 +1,55 @@
+.brand {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.brand.spotify {
+    background-image: url(/assets/desktop/spotify.svg);
+    width: 96px;
+    height: 29px;
+}
+
+.brand.apple {
+    background-image: url(/assets/desktop/apple-podcast.svg);
+    width: 78px;
+    height: 28px;
+}
+
+.brand.google {
+    background-image: url(/assets/desktop/google-podcasts.svg);
+    width: 125px;
+    height: 16px;
+}
+
+.brand.pocket {
+    background-image: url(/assets/desktop/pocket-casts.svg);
+    width: 129px;
+    height: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .brand.spotify {
+        background-image: url(/assets/desktop/spotify.svg);
+        width: 56px;
+        height: 17px;
+    }
+    
+    .brand.apple {
+        background-image: url(/assets/desktop/apple-podcast.svg);
+        width: 45px;
+        height: 17px;
+    }
+    
+    .brand.google {
+        background-image: url(/assets/desktop/google-podcasts.svg);
+        width: 73px;
+        height: 11px;
+    }
+    
+    .brand.pocket {
+        background-image: url(/assets/desktop/pocket-casts.svg);
+        width: 77px;
+        height: 15px;
+    }
+}

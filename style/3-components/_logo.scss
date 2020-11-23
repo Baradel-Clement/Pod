@@ -1,0 +1,21 @@
+.container  > img {
+    width: 135px;
+    height: 56px;
+    @include absolute-el(-28px, unset, unset, 0px);
+    z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+    .container  > img {
+        @include absolute-el(39px, unset, unset, 50px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container  > img {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-bottom: 57px;
+    }
+}

@@ -1,0 +1,124 @@
+.main-description {
+    width: 723px;
+    height: 509px;
+    @include absolute-el(unset, unset, 0px, 0px);
+    z-index: 3;
+    padding: 88px 58px 0px 0px;
+    @include flex(flex, column, flex-end, flex-start);
+    background-color: $dark;
+}
+
+.main-description > p {
+    width: 445px;
+    margin-top: 24px;
+}
+
+.email-input {
+    width: 427px;
+    height: 56px;
+    background: $light-dark;
+    border-radius: 28px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.email-input > input {
+    background: $light-dark;
+    border: none;
+    padding-left: 32px;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    outline: none;
+    position: relative;
+}
+
+.email-input > a {
+    @include absolute-el(5px, 6px, unset, unset);
+}
+
+.brands {
+    width: 536px;
+    height: 29px;
+    @include flex(flex, row, space-between, center);
+    opacity: 0.25;
+    margin-top: 64px;
+}
+
+.error {
+    @include absolute-el(unset, unset, -25px, 32px);
+    opacity: 0;
+    z-index: -3;
+}
+
+.error.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-description {
+        width: 635px;
+        @include absolute-el(unset, unset, 0px, 39px);
+        padding: 0px;
+    }
+
+    .main-description > p {
+        width: 327px;
+        margin-top: 31px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-description {
+        width: 336px;
+        height: 398px;
+        padding: 0px;
+        left: unset;
+        position: relative;
+        @include flex(flex, column, flex-start, center);
+    }
+
+    .title {
+        margin-bottom: 16px;
+    } 
+
+    .main-description > p {
+        width: 327px;
+        margin-top: 0px;
+        margin-bottom: 98px;
+    }
+
+    .email-input {
+        width: 327px;
+        height: 108px;
+        border-radius: 0px;
+        position: relative;
+        background: transparent;
+        margin-top: 0px;
+        @include flex(flex, column, space-between, center);
+    }
+
+    .email-input > input {
+        height: 46px;
+    }
+    
+    .email-input > a {
+        position: relative;
+        top: unset;
+        right: unset;
+        width: 100%;
+        height: 46px;
+    }
+    
+    .brands {
+        width: 315px;
+        height: 17px;
+        @include absolute-el(unset, unset, 155px, unset)
+    }
+    
+    .error {
+        @include absolute-el(unset, unset, -25px, 32px);
+    }
+}

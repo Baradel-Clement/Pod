@@ -1,0 +1,25 @@
+.main-image {
+    width: 902px;
+    height: 640px;
+    position: relative;
+    z-index: 1;
+    background-image: url(/assets/desktop/image-host.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-image {
+        width: 491px;
+        height: 767px;
+        background-image: url(/assets/tablet/image-host.jpg);
+        background-size: cover;
+        background-position: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-image {
+        display: none;
+    }
+}
